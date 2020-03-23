@@ -1,5 +1,5 @@
 const assert = require('assert');
-const MagicSquare = require('../src');
+const MagicSquare = require('../src/index');
 
 
 describe('MagicSquare', function() {

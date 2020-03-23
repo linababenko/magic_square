@@ -2,13 +2,14 @@
   "name": "magic_square",
   "version": "1.0.0",
   "description": "",
-  "main": "src.js",
+  "main": "src/index.js",
   "dependencies": {},
   "devDependencies": {
-    "mocha": "^7.1.1"
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "nyc mocha"
   },
   "repository": {
     "type": "git",
