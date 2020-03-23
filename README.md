@@ -1,6 +1,9 @@
 **Forming a Magic
 Square**
 
+[![Build Status](https://travis-ci.org/linababenko/magic_square.svg?branch=master)](https://travis-ci.org/linababenko/magic_square)
+[![Coverage Status](https://coveralls.io/repos/github/linababenko/magic_square/badge.svg?branch=master)](https://coveralls.io/github/linababenko/magic_square?branch=master)
+
 **TASK:**
 
 We define a magic square to be an _nxn_ matrix of distinct positive integers from _1_ to _n^2_ where the sum
