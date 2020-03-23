@@ -16,62 +16,22 @@ function MagicSquare(s) {
     ];
 
     let totals = [];
-
+    
     for (let i = 0; i < 8; i += 1) {
         let total = 0;
         let currentRow = PossibleCombinations[i];
-
+        
         for (let j = 0; j < 3; j += 1) {
-
+            
             for (let k = 0; k < 3; k += 1) {
-                //если число в s совпадает с паттерном, выводится это число.
-
                 if (s[j][k] !== currentRow[j][k]) {
-
                     total += Math.max(s[j][k], currentRow[j][k]) - Math.min(s[j][k], currentRow[j][k]);
-
-                    // 8 - 4 = 4
-                    // 4 +=  8 - 1 = 11
-                    // 11 += 6 - 2 = 15
-                    // 15 += 4 - 3 = 16
-                    // 16 += 6 - 4 = 18
-                    // 18 += 9 - 1 = 26
-                    // 26 += 6 - 2 = 30
-
-                    // 8 - 1 = 9
-                    // 9 += 8 - 2 = 15
-                    // 15 + 7 - 4 = 18
-                    // 18 + 7 - 3 = 22
-                    // 22 + 6 - 2 = 26
-                    // 26 + 9 - 1 = 34
-                    // 34 + 6 - 4 = 36
-
-                    //9 - 8 = 1
-                    //1 + 4 - 3 = 2
-                    //2 + 8 - 6 = 4
-
-                    //2 + 9 - 8 = 3
-                    //3 + 4 - 2 = 5
-                    //5 + 7 - 4 = 8
-                    //8 + 7 - 3 = 12
-                    //12 + 8 - 6 = 14
-
-                    //8 - 4 = 4
-                    //4 + 8 - 3 = 9
-                    //9 + 4 - 2 = 11
-                    //11 + 4 - 1 = 14
-                    //14 + 9 - 7 = 16
-                    //16+ 7 - 1 = 22
-                    //22 + 6 -2 = 26
-
-
                 }
             }
         }
         totals.push(total);
     }
     return Math.min(...totals);
-
 }
 
 module.exports = MagicSquare;
