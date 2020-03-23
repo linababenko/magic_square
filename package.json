@@ -1,0 +1,23 @@
+{
+  "name": "magic_square",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^7.1.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linababenko/magic_square.git"
+  },
+  "author": "Alina Babenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linababenko/magic_square/issues"
+  },
+  "homepage": "https://github.com/linababenko/magic_square#readme"
+}
