@@ -1,3 +1,5 @@
+# magic_square
+
 **Forming a Magic
 Square**
 
@@ -75,4 +77,3 @@ total = 30, 36, **4**, 14, 26, 32, 14, 24
     
     ..etc
 
-# magic_square
